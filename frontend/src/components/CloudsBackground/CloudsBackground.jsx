@@ -11,6 +11,9 @@ const CloudsBackground = ({ children }) => {
       <div className="clouds__item clouds__item_4" />
       <div className="clouds__item clouds__item_5" />
       <div className="clouds__item clouds__item_6" />
+      <div className="clouds__item clouds__item_7" />
+      <div className="clouds__item clouds__item_8" />
+      <div className="clouds__item clouds__item_9" />
     </div>
   );
 };

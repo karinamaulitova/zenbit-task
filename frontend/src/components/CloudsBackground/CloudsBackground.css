@@ -1,0 +1,80 @@
+.clouds {
+  position: relative;
+}
+
+.clouds__item {
+  position: absolute;
+  background: url("../../images/cloud.svg") no-repeat;
+  background-size: contain;
+}
+
+.clouds__item_circle {
+  background: url("../../images/yellow-circle.svg") no-repeat;
+  width: 87px;
+  height: 87px;
+  top: 21px;
+  right: 639px;
+}
+
+.clouds__item_1 {
+  width: 139px;
+  height: 104px;
+  top: 129px;
+  right: 685px;
+}
+
+.clouds__item_2 {
+  width: 219px;
+  height: 165px;
+  top: 100px;
+  right: 446px;
+}
+
+.clouds__item_3 {
+  width: 246px;
+  height: 189px;
+  top: 187px;
+  left: -71px;
+}
+
+.clouds__item_4 {
+  width: 173px;
+  height: 130px;
+  top: 257px;
+  right: 574px;
+}
+
+.clouds__item_5 {
+  width: 219px;
+  height: 165px;
+  top: 401px;
+  left: -95px;
+}
+
+.clouds__item_6 {
+  width: 131px;
+  height: 100px;
+  bottom: 136px;
+  left: 100px;
+}
+
+.clouds__item_7 {
+  width: 219px;
+  height: 165px;
+  bottom: 135px;
+  left: 343px;
+}
+
+.clouds__item_8 {
+  width: 170px;
+  height: 129px;
+  bottom: 49px;
+  right: 536px;
+}
+
+.clouds__item_9 {
+  width: 289px;
+  height: 217px;
+  bottom: -52px;
+  left: 140px;
+}
