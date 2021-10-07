@@ -4,14 +4,14 @@ import { MessagesService } from './messages.service';
 
 @Controller('messages')
 export class MessagesController {
-    constructor(private readonly messagesService: MessagesService) {}
-    @Get()
-    findAll () {
-        return this.messagesService.findAll();
-    }
+  constructor(private readonly messagesService: MessagesService) {}
+  @Get()
+  findAll() {
+    return this.messagesService.findAll();
+  }
 
-   @Post()
-   create(@Body() createMessageDto: CreateMessageDto) {
-       return this.messagesService.create(createMessageDto);
-   } 
+  @Post()
+  create(@Body() createMessageDto: CreateMessageDto) {
+    return this.messagesService.create(createMessageDto);
+  }
 }

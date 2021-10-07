@@ -1,0 +1,9 @@
+@import url('../vendor/normalize.css');
+@import url('../components/MainPage/MainPage.css');
+@import url('../components//YellowSmallSmileCircle/YellowSmallSmileCircle.css');
+@import url('../components/ContactForm/ContactForm.css');
+@import url('../components/Map/Map.css');
+@import url('../components/YellowSmileCircle/YellowSmileCircle.css');
+@import url('../components/Footer/Footer.css');
+@import url('../components/PinkSmileCircle/PinkSmileCircle.css');
+@import url('../components/GreenSmile/GreenSmile.css');

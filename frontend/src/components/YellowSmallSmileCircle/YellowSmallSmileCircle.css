@@ -1,0 +1,16 @@
+.yellow-smile-small {
+  background: url("../../images/yellow-smile.svg");
+  width: 89px;
+  height: 87px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.yellow-smile-small_type_main {
+  align-self: flex-start;
+}
+
+.yellow-smile-small_type_footer {
+  align-self: center;
+  background-position: -12% 50%;
+}

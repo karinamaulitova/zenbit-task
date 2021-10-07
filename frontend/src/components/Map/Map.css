@@ -1,0 +1,25 @@
+.map {
+  position: relative;
+}
+
+.map__image {
+  clip-path: circle(488px at 484px 436px);
+  z-index: 1;
+}
+
+.map__yellow-smile,
+.map__pink-smile {
+  position: absolute;
+}
+
+.map__pink-smile {
+  z-index: 2;
+  top: 601px;
+  left: -9px;
+}
+
+.map__yellow-smile {
+  z-index: 3;
+  top: 516px;
+  left: -51px;
+}

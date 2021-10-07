@@ -1,0 +1,11 @@
+.green-smile {
+  background: url("../../images/green-smile.svg");
+  width: 79px;
+  height: 97px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
+.green__smile_type_footer {
+  margin-right: 36px;
+}

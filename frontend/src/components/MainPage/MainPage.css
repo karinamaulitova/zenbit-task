@@ -1,0 +1,18 @@
+.main-page {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-page__main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-page__smile-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 41px 0 0 45px;
+  width: 50%;
+  align-items: center;
+}

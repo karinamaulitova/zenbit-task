@@ -1,0 +1,14 @@
+.pink-smile {
+  background: url("../../images/pink-smile.svg");
+  width: 214px;
+  height: 211px;
+  background-repeat: no-repeat;
+}
+
+.pink-smile_type_map {
+  background-position: center;
+}
+
+.pink-smile_type_footer {
+  background-position: 50% 45%;
+}
