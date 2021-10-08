@@ -7,7 +7,7 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="footer__links-smile-wrapper">
-        <PinkSmileCircle className="pink-smile_type_footer" />
+        <PinkSmileCircle className="pink-smile_type_footer footer__pink-smile" />
         <ul className="footer__links-list">
           <li className="footer__link-item">
             <a
@@ -100,8 +100,8 @@ function Footer() {
         </ul>
       </div>
       <div className="footer__smiles-wrapper">
-        <GreenSmile className="green-smile_type_footer" />
-        <YellowSmallSmileCircle className="yellow-smile-small_type_footer" />
+        <GreenSmile className="green-smile_type_footer footer__green-smile" />
+        <YellowSmallSmileCircle className="yellow-smile-small_type_footer footer__yellow-smile" />
       </div>
     </footer>
   );

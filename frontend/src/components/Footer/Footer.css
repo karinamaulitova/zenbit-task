@@ -33,3 +33,40 @@
 .footer__smiles-wrapper {
   display: flex;
 }
+
+.footer__green-smile {
+  margin-right: 37px;
+}
+
+.footer__link-item .footer__link-svg path {
+  fill: #696969;
+  transition: all 0.6s ease;
+}
+
+.footer__link-item:hover .footer__link-svg path {
+  fill: #fad34f;
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 0;
+  }
+
+  .footer__links-smile-wrapper {
+    margin: 0 auto;
+  }
+
+  .footer__links-list {
+    margin: 0;
+  }
+
+  .footer__green-smile {
+    margin-right: 10px;
+    justify-self: flex-end;
+  }
+
+  .footer__pink-smile,
+  .footer__yellow-smile {
+    display: none;
+  }
+}
