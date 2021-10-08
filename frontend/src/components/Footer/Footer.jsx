@@ -11,7 +11,7 @@ function Footer() {
         <ul className="footer__links-list">
           <li className="footer__link-item">
             <a
-              className="footer__link"
+              className="footer__link footer__link_linkedin"
               href="https://linkedin.com"
               target="_blank"
               rel="noreferrer"
@@ -33,7 +33,7 @@ function Footer() {
           </li>
           <li className="footer__link-item">
             <a
-              className="footer__link"
+              className="footer__link footer__link_twitter"
               href="https://twitter.com"
               target="_blank"
               rel="noreferrer"
@@ -55,7 +55,7 @@ function Footer() {
           </li>
           <li className="footer__link-item">
             <a
-              className="footer__link"
+              className="footer__link footer__link_fb"
               href="https://facebook.com"
               target="_blank"
               rel="noreferrer"
@@ -77,7 +77,7 @@ function Footer() {
           </li>
           <li className="footer__link-item">
             <a
-              className="footer__link"
+              className="footer__link footer__link_pinterest"
               href="https://pinterest.com"
               target="_blank"
               rel="noreferrer"

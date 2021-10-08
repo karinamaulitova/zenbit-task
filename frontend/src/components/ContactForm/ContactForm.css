@@ -31,15 +31,18 @@
   line-height: 180%;
   color: #2d2d2d;
 
-  margin-bottom: 8px;
+  margin-top: 8px;
 }
+
+.contact-form__input:first-child {
+  margin-top: 0;
+} 
 
 .contact-form__input::placeholder {
   color: #2d2d2d;
 }
 
 .contact-form__input_type_textarea {
-  margin-bottom: 23px;
   height: 189px;
 }
 
@@ -58,12 +61,21 @@
   max-width: 218px;
   width: 100%;
 
+  margin-top: 23px;
   transition: all 0.6s ease;
 }
 
 .contact-form__button:hover {
   background: #ffffff;
   color: #fad34f;
+}
+
+.contact-form__error-message {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 180%;
+  color: #ee3465;
 }
 
 @media screen and (max-width: 1099px) {
