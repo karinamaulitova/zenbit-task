@@ -1,6 +1,8 @@
 import React from "react";
 import { Formik } from "formik";
 
+const SUBMIT_URL = "//localhost:3001/messages";
+
 function ContactForm() {
   return (
     <section className="contact-form">
@@ -26,12 +28,26 @@ function ContactForm() {
           }
           return errors;
         }}
-        onSubmit={(values, { setSubmitting, resetForm }) => {
-          setTimeout(() => {
-            alert(JSON.stringify(values, null, 2));
-            resetForm();
-            setSubmitting(false);
-          }, 400);
+        onSubmit={async (values, { setStatus, resetForm }) => {
+          setStatus({})
+          try {
+            const res = await fetch(SUBMIT_URL, {
+              method: "POST",
+              headers: {
+                Accept: "application/json",
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify(values),
+            });
+            if (res.ok) {
+              resetForm();
+              setStatus({ success: true });
+            } else {
+              throw new Error("Form submition failed");
+            }
+          } catch (e) {
+            setStatus({ error: e.message });
+          }
         }}
       >
         {({
@@ -42,6 +58,7 @@ function ContactForm() {
           handleBlur,
           handleSubmit,
           isSubmitting,
+          status,
         }) => (
           <form
             className="contact-form__form"
@@ -89,6 +106,11 @@ function ContactForm() {
             <span className="contact-form__error-message">
               {errors.message && touched.message && errors.message}
             </span>
+            <div className='contact-form__button-wrapper'>
+            <span className='contact-form__error-status'>
+              {status?.error}
+            </span>
+            {status?.success && <span className='contact-form__success-status'>Success</span>}
             <button
               className="contact-form__button"
               type="submit"
@@ -96,6 +118,7 @@ function ContactForm() {
             >
               Send message
             </button>
+            </div>
           </form>
         )}
       </Formik>

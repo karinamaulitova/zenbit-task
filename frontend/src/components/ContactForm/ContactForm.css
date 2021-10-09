@@ -46,6 +46,28 @@
   height: 189px;
 }
 
+.contact-form__button-wrapper {
+  margin-top: 23px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form__error-status {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 180%;
+  color: #ee3465;
+}
+
+.contact-form__success-status {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 180%;
+  color: green;
+}
+
 .contact-form__button {
   background: #fad34f;
   border-radius: 500px;
@@ -61,7 +83,6 @@
   max-width: 218px;
   width: 100%;
 
-  margin-top: 23px;
   transition: all 0.6s ease;
 }
 
