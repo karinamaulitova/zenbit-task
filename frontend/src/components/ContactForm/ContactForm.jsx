@@ -1,7 +1,7 @@
 import React from "react";
 import { Formik } from "formik";
 
-const SUBMIT_URL = "//localhost:3001/messages";
+const SUBMIT_URL = process.env.NODE_ENV === 'production' ? "https://karina-api.shestakov.ru/messages" : "//localhost:3001/messages";
 
 function ContactForm() {
   return (
