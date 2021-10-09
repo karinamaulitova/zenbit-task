@@ -16,7 +16,8 @@ npm run start:dev
 ```
 
 ### Frontend
-Please note that backend should be running in parallel
+>Please note that backend should be running in parallel
+
 Go to frontend folder
 ```sh
 cd ./frontend
